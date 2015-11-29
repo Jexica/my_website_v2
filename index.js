@@ -17,7 +17,7 @@ function submitForm() {
 }
 
 function onSubmitSuccess() {
-    alert("Thank you for your message,\nI will get back to you as soon as possible!")
+    alert("Thank you for your message,\nI will get back to you as soon as possible!");
     document.contact.reset();
 }
 
