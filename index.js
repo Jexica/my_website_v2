@@ -5,9 +5,9 @@ jQuery('#form-submit-button').on('click', function() {
 
 function submitForm() {
     var data = {
-        'name': document.getElementsByName('name')[0].value,
-        'email': document.getElementsByName('email')[0].value,
-        'message': document.getElementsByName('message')[0].value
+        'name': document.contact.name.value,
+        'email': document.contact.email.value,
+        'message': document.contact.message.value
     };
 
     jQuery
@@ -18,6 +18,7 @@ function submitForm() {
 
 function onSubmitSuccess() {
     alert("Thank you for your message,\nI will get back to you as soon as possible!")
+    document.contact.reset();
 }
 
 function onSubmitFailure(promise) {
