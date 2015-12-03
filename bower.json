@@ -1,0 +1,9 @@
+{
+    "name": "jessicalopez.me",
+    "homepage": "http://jessicalopez.me",
+    "description": "My personal website",
+    "dependencies": {
+        "jquery": "2.1.4",
+        "lightbox2": "2.8.1"
+    }
+}
