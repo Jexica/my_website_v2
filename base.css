@@ -178,6 +178,10 @@ nav.navbar-default {
     height: auto;
 }
 
+.carousel-caption {
+    bottom: -15px !important;
+}
+
 .show-button {
     font-weight: 400;
     background-color: #fff;
