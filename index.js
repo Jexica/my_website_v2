@@ -1,4 +1,13 @@
 // This file must be loaded after jQuery, as it depends on it
+
+// Configure the LightBox widget
+lightbox.option({
+    alwaysShowNavOnTouchDevices: true,
+    fadeDuration: 300,
+    resizeDuration: 500
+});
+
+// Set listener for the contact form's submit button
 jQuery('#form-submit-button').on('click', function() {
     submitForm();
 });
