@@ -204,6 +204,12 @@ nav.navbar-default {
     border-radius: 5px;
 }
 
+.responsive-portfolio-link,
+.responsive-portfolio-link:hover {
+    color: #fff;
+}
+
+
 .form-input {
     font-weight: 300;
     width: 100%;
