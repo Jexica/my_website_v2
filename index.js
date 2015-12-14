@@ -8,9 +8,7 @@ lightbox.option({
 });
 
 // Set listener for the contact form's submit button
-jQuery('#form-submit-button').on('click', function() {
-    submitForm();
-});
+jQuery('#form-submit-button').on('click', submitForm);
 
 /**
  * Called after the form was successfully submitted
