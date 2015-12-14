@@ -3,6 +3,7 @@
 // Configure the LightBox widget
 lightbox.option({
     alwaysShowNavOnTouchDevices: true,
+    wrapAround: true,
     fadeDuration: 300,
     resizeDuration: 500
 });
