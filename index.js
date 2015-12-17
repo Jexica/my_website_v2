@@ -8,6 +8,12 @@ lightbox.option({
     resizeDuration: 500
 });
 
+// Listener for the "Show more" button (portfolio)
+jQuery('#show-more-button').on('click', function showMoreListener(e) {
+    jQuery('#show-more-container').hide();
+    jQuery('.portfolio-extra-row').fadeIn();
+});
+
 // Set listener for the contact form's submit button
 jQuery('#form-submit-button').on('click', submitForm);
 
