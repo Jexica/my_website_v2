@@ -50,3 +50,26 @@ function submitForm() {
         .done(onSubmitSuccess)
         .fail(onSubmitFailure);
 }
+
+/**
+ * Capture all the navbar links to animate scrolling into the section.
+ * Adapted from https://gist.github.com/omurphy27/3b56f49f5054a250dbb2
+ */
+$(".navbar-nav li a[href^='#']").on('click', function onNavbarItemClick(e) {
+    // If no hash name is specified we scroll to the top
+    var scrollTo = this.hash ? $(this.hash).offset().top : 0;
+
+    // Prevent default anchor click behavior, we will control it
+    e.preventDefault();
+
+    // Store the hash for later use
+    var hash = this.hash;
+
+    // Scroll the element into view, animated
+    $('html, body').animate({
+        scrollTop: scrollTo
+    }, 300, function () {
+        // Animation finished, add the hash to the URL as normal
+        window.location.hash = hash;
+    });
+});
