@@ -9,7 +9,7 @@ lightbox.option({
 });
 
 // Listener for the "Show more" button (portfolio)
-jQuery('#show-more-button').on('click', function showMoreListener(e) {
+jQuery('#show-more-button').on('click', function showMoreListener() {
     jQuery('#show-more-container').hide();
     jQuery('.portfolio-extra-row').fadeIn();
 });
