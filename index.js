@@ -52,10 +52,15 @@ function submitForm() {
 }
 
 /**
- * Capture all the navbar links to animate scrolling into the section.
+ * Capture all the relevant links to animate scrolling into the section.
  * Adapted from https://gist.github.com/omurphy27/3b56f49f5054a250dbb2
  */
-$(".navbar-nav li a[href^='#']").on('click', function onNavbarItemClick(e) {
+$(".navbar-nav li a[href^='#']").on('click', scrollToSection);
+$("#scroll-img, #scroll-text").on('click', scrollToSection);
+$("a.navbar-brand").on('click', scrollToSection);
+$("#navigate-top").on('click', scrollToSection);
+
+function scrollToSection(e) {
     // If no hash name is specified we scroll to the top
     var scrollTo = this.hash ? $(this.hash).offset().top : 0;
 
@@ -72,4 +77,4 @@ $(".navbar-nav li a[href^='#']").on('click', function onNavbarItemClick(e) {
         // Animation finished, add the hash to the URL as normal
         window.location.hash = hash;
     });
-});
+}
