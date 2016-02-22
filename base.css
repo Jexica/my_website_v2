@@ -23,7 +23,7 @@ nav.navbar-default {
 
 #jumbotron {
     display: table;
-    background: url("images/slider.png") 50%;
+    background: url("images/slider.jpg") 50%;
     height: 500px;
     width: 100%;
 }
